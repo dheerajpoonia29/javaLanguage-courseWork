@@ -1,0 +1,9 @@
+CREATE DATABASE user;
+USE user;
+CREATE TABLE auth
+(
+id int NOT NULL AUTO_INCREMENT,
+firstname varchar(50),
+password varchar(50),
+PRIMARY KEY (id)
+);
