@@ -5,11 +5,11 @@ class Main{	//	every java program have a class definition (that matches the file
 	public static void main(String[] args){	//	entry point of program
 		// helloWorldMethod();
 		// outputMethod();
-		inputMethod();
+		// inputMethod();
 		// conditionMethod();
 		// loopMethod();
 		// arrayMethod();	
-		// oops1Method();
+		understandingClassMethod();
 	}
 
 	public static void helloWorldMethod(){
@@ -128,27 +128,32 @@ class Main{	//	every java program have a class definition (that matches the file
 		}
 	}
 
-	public static void oops1Method(){
-		Oops1 obj = new Oops1();
+	public static void understandingClassMethod(){
+		UnderstandingClass obj = new UnderstandingClass();
 		System.out.println("Instance Variable = "+obj.getInstanceVariableMethod());
 		obj.setInstanceVariableMethod(50);
 		System.out.println("Updated Instance Variable = "+obj.getInstanceVariableMethod());
 	}
 }
 
-class Oops1{
-	private int instance_variable = 10;							// State 
+class UnderstandingClass{
+	private int instance_variable = 10;							// State, private: can not be accessed by other classes.
 	
-	void Oops1(){																		// Constructor: it also have access modifier, parameterized Constructor
+	void UnderstandingClass(){																		// Constructor: it also have access modifier, parameterized Constructor
 		System.out.println("Oops1 method called");
 	}
 
-	public int getInstanceVariableMethod(){					// Behavior 
+	public int getInstanceVariableMethod(){					// Behavior, public:  accessed by other classes.
 		// here not mention static because we access this method by creating object
 		return instance_variable;
 	}
 	
 	public void setInstanceVariableMethod(int new_value){
 		instance_variable = new_value;							// this.instance_variable also same, we use this when statement vunerable to became ambiguous
+		// imp use case of this keyword : https://www.programiz.com/java-programming/this-keyword
 	}
+}
+
+class UnderstandingOops{
+	// https://www.programiz.com/java-programming/inheritance
 }
