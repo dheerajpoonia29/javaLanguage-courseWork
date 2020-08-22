@@ -2,19 +2,17 @@
 <br>
 
 ```
-import java.util.Scanner;	
-//	Scanner class to get an integer input from the user.
+import java.util.Scanner;	//	Scanner class to get an integer input from the user.
 
-class Main{	
-	//	every java program have a class definition (that matches the filename)	
+class Main{			//	every java program have a class definition (that matches the filename)	
 
-	public static void main(String[] args){	//	entry point of program
+	public static void main(String[] args){		//	entry point of program
 		// helloWorldMethod();
 		// outputMethod();
 		// inputMethod();
 		// conditionMethod();
 		// loopMethod();
-		// arrayMethod();	
+		// arrayMethod();			// uncomment and learn
 		understandingClassMethod();
 	}
 
@@ -30,8 +28,8 @@ class Main{
 
 	public static void outputMethod(){
 		System.out.print("hi bud");			//	normal std o/p
-		System.out.println("hi bud");		//	give new line after std o/p		
-		System.out.printf("hi bud");		//	Tt provides string formatting like printf in c
+		System.out.println("hi bud");			//	give new line after std o/p		
+		System.out.printf("hi bud");			//	Tt provides string formatting like printf in c
 
 		System.out.println("value = "+10);
 		System.out.println("dheeraj"+" "+"poonia");
@@ -40,12 +38,12 @@ class Main{
 	public static void inputMethod(){
 		// import java.util.Scanner;
 		Scanner input = new Scanner(System.in);
-		int number = input.nextInt();										//	similarly we use nextLong(), nextFloat(), nextDouble(), input.next() for string
+		int number = input.nextInt();			//	similarly we use nextLong(), nextFloat(), nextDouble(), input.next() for string
 		System.out.println("You entered : "+number);
 
 		String name = input.next();
 		System.out.println("You entered : "+name);
-		input.close();																	//	recommended to close the scanner object once the input is taken.
+		input.close();					//	recommended to close the scanner object once the input is taken.
 	}
 
 	public static void conditionMethod(){
@@ -94,11 +92,11 @@ class Main{
 	}
 
 	public static void arrayMethod(){
-		int[] arr;															//	Declaration of array
+		int[] arr;						//	Declaration of array
 
-		arr = new int[3];												//	or int[] arr = new int[3];
+		arr = new int[3];					//	or int[] arr = new int[3];
 
-		arr[0] = 10;	arr[1] = 20; arr[2] = 30;	//	Initialize
+		arr[0] = 10;	arr[1] = 20; arr[2] = 30;		//	Initialize
 
 		System.out.println("Pattern1: ");
 		for(int i=0; i<3; i++){									
@@ -106,7 +104,7 @@ class Main{
 		}
 		System.out.println();
 
-		int[] arr2 = {1,2,3,4,5};								//	Declaration with Initialization 
+		int[] arr2 = {1,2,3,4,5};				//	Declaration with Initialization 
 
 		System.out.println("Pattern2: ");
 		for(int i=0; i<arr2.length; i++){			
@@ -120,13 +118,13 @@ class Main{
 		System.out.println();
 
 		System.out.println("Pattern4: ");
-		for(Object item: arr2){								//	Oject similar to auto in cpp
+		for(Object item: arr2){					//	Oject similar to auto in cpp
 			System.out.print(item+" ");						
 		}
 
 		System.out.println("\nPattern5: ");
-		int[][] matrix = {{1, 2}, {3, 4}};		
-		for(int[] row: matrix){									// Pattern5
+		int[][] matrix = {{1, 2}, {3, 4}};			
+		for(int[] row: matrix){					//	Pattern5
 			for(int item: row){
 				System.out.print(item+" ");
 			}
@@ -143,7 +141,7 @@ class Main{
 }
 
 class UnderstandingClass{
-	private int instance_variable = 10;							// State, private: can not be accessed by other classes.
+	private int instance_variable = 10;					// State, private: can not be accessed by other classes.
 	
 	void UnderstandingClass(){																		// Constructor: it also have access modifier, parameterized Constructor
 		System.out.println("Oops1 method called");
@@ -155,7 +153,7 @@ class UnderstandingClass{
 	}
 	
 	public void setInstanceVariableMethod(int new_value){
-		instance_variable = new_value;							// this.instance_variable also same, we use this when statement vunerable to became ambiguous
+		instance_variable = new_value;					// this.instance_variable also same, we use this when statement vunerable to became ambiguous
 		// imp use case of this keyword : https://www.programiz.com/java-programming/this-keyword
 	}
 }
