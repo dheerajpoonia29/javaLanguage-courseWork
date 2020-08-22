@@ -1,9 +1,12 @@
 # java_programming_language
 <br>
-'''
-import java.util.Scanner;	//	Scanner class to get an integer input from the user.
 
-class Main{	//	every java program have a class definition (that matches the filename)	
+'''
+import java.util.Scanner;	
+//	Scanner class to get an integer input from the user.
+
+class Main{	
+	//	every java program have a class definition (that matches the filename)	
 
 	public static void main(String[] args){	//	entry point of program
 		// helloWorldMethod();
