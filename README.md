@@ -1,7 +1,7 @@
 # java_programming_language
 <br>
 
-'''
+```
 import java.util.Scanner;	
 //	Scanner class to get an integer input from the user.
 
@@ -163,5 +163,4 @@ class UnderstandingClass{
 class UnderstandingOops{
 	// https://www.programiz.com/java-programming/inheritance
 }
-
-'''
+```
